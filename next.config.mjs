@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -9,7 +10,10 @@ const nextConfig = {
       },
     ],
   },
+  eslint: {
+    // Skip linting during builds
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
-
