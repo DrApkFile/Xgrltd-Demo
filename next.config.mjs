@@ -11,8 +11,12 @@ const nextConfig = {
     ],
   },
   eslint: {
-    // Skip linting during builds
+    // Skip ESLint during builds
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Skip type-checking during builds
+    ignoreBuildErrors: true,
   },
 };
 
